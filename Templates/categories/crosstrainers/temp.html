@@ -1,0 +1,1252 @@
+
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex,nofollow">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <style id="cfs-style">html{display: none;}</style>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" type="text/css" href="print.css?v=5.0.3">
+    <title>Print view - phpMyAdmin 5.0.3</title>
+    <script data-cfasync="false" type="text/javascript" src="js/vendor/jquery/jquery.min.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/vendor/jquery/jquery-migrate.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/whitelist.php?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/vendor/sprintf.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/ajax.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/keyhandler.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/vendor/bootstrap/bootstrap.bundle.min.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/vendor/jquery/jquery-ui.min.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/vendor/js.cookie.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/vendor/jquery/jquery.mousewheel.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/vendor/jquery/jquery.event.drag-2.2.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/vendor/jquery/jquery.validate.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/vendor/jquery/jquery-ui-timepicker-addon.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/vendor/jquery/jquery.ba-hashchange-1.3.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/vendor/jquery/jquery.debounce-1.0.5.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/menu_resizer.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/cross_framing_protection.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/rte.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/vendor/tracekit.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/error_report.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/messages.php?l=en&amp;v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/config.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/doclinks.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/functions.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/navigation.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/indexes.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/common.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/page_settings.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/drag_drop_import.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/shortcuts_handler.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/vendor/codemirror/lib/codemirror.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/vendor/codemirror/mode/sql/sql.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/vendor/codemirror/addon/runmode/runmode.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/vendor/codemirror/addon/hint/show-hint.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/vendor/codemirror/addon/hint/sql-hint.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/vendor/codemirror/addon/lint/lint.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/codemirror/addon/lint/sql-lint.js?v=5.0.3"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/console.js?v=5.0.3"></script>
+
+<script data-cfasync="false" type="text/javascript">
+// <![CDATA[
+CommonParams.setAll({common_query:"",opendb_url:"db_structure.php",lang:"en",server:"1",table:"",db:"anytimefitness",token:"4f576c7948235a424e732a517c434577",text_dir:"ltr",show_databases_navigation_as_tree:true,pma_text_default_tab:"Browse",pma_text_left_default_tab:"Structure",pma_text_left_default_tab2:false,LimitChars:"50",pftext:"P",confirm:true,LoginCookieValidity:"1440",session_gc_maxlifetime:"1440",logged_in:true,is_https:false,rootPath:"/phpmyadmin/",arg_separator:"&",PMA_VERSION:"5.0.3",auth_type:"config",user:"root"});
+ConsoleEnterExecutes=false
+
+AJAX.scriptHandler
+  .add('vendor/jquery/jquery.min.js', 0)
+  .add('vendor/jquery/jquery-migrate.js', 0)
+  .add('whitelist.php', 1)
+  .add('vendor/sprintf.js', 1)
+  .add('ajax.js', 0)
+  .add('keyhandler.js', 1)
+  .add('vendor/bootstrap/bootstrap.bundle.min.js', 1)
+  .add('vendor/jquery/jquery-ui.min.js', 0)
+  .add('vendor/js.cookie.js', 1)
+  .add('vendor/jquery/jquery.mousewheel.js', 0)
+  .add('vendor/jquery/jquery.event.drag-2.2.js', 0)
+  .add('vendor/jquery/jquery.validate.js', 0)
+  .add('vendor/jquery/jquery-ui-timepicker-addon.js', 0)
+  .add('vendor/jquery/jquery.ba-hashchange-1.3.js', 0)
+  .add('vendor/jquery/jquery.debounce-1.0.5.js', 0)
+  .add('menu_resizer.js', 1)
+  .add('cross_framing_protection.js', 0)
+  .add('rte.js', 1)
+  .add('vendor/tracekit.js', 1)
+  .add('error_report.js', 1)
+  .add('messages.php', 0)
+  .add('config.js', 1)
+  .add('doclinks.js', 1)
+  .add('functions.js', 1)
+  .add('navigation.js', 1)
+  .add('indexes.js', 1)
+  .add('common.js', 1)
+  .add('page_settings.js', 1)
+  .add('drag_drop_import.js', 1)
+  .add('shortcuts_handler.js', 1)
+  .add('vendor/codemirror/lib/codemirror.js', 0)
+  .add('vendor/codemirror/mode/sql/sql.js', 0)
+  .add('vendor/codemirror/addon/runmode/runmode.js', 0)
+  .add('vendor/codemirror/addon/hint/show-hint.js', 0)
+  .add('vendor/codemirror/addon/hint/sql-hint.js', 0)
+  .add('vendor/codemirror/addon/lint/lint.js', 0)
+  .add('codemirror/addon/lint/sql-lint.js', 0)
+  .add('console.js', 1)
+;
+$(function() {
+        AJAX.fireOnload('whitelist.php');
+      AJAX.fireOnload('vendor/sprintf.js');
+        AJAX.fireOnload('keyhandler.js');
+      AJAX.fireOnload('vendor/bootstrap/bootstrap.bundle.min.js');
+        AJAX.fireOnload('vendor/js.cookie.js');
+                  AJAX.fireOnload('menu_resizer.js');
+        AJAX.fireOnload('rte.js');
+      AJAX.fireOnload('vendor/tracekit.js');
+      AJAX.fireOnload('error_report.js');
+        AJAX.fireOnload('config.js');
+      AJAX.fireOnload('doclinks.js');
+      AJAX.fireOnload('functions.js');
+      AJAX.fireOnload('navigation.js');
+      AJAX.fireOnload('indexes.js');
+      AJAX.fireOnload('common.js');
+      AJAX.fireOnload('page_settings.js');
+      AJAX.fireOnload('drag_drop_import.js');
+      AJAX.fireOnload('shortcuts_handler.js');
+                    AJAX.fireOnload('console.js');
+  });
+// ]]>
+</script>
+
+  <noscript><style>html{display:block}</style></noscript>
+</head>
+<body>
+  
+  
+  
+
+  
+      <noscript>
+      <div class="error"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_error"> Javascript must be enabled past this point!</div>
+    </noscript>
+  
+  
+  
+
+  <div id="page_content">
+    
+
+  
+<h1>anytimefitness</h1>
+
+<div>
+      <div>
+      <h2>categories</h2>
+      
+      <table class="print">
+        <tr>
+          <th>Column</th>
+          <th>Type</th>
+          <th>Null</th>
+          <th>Default</th>
+                      <th>Links to</th>
+                    <th>Comments</th>
+                      <th>Media (MIME) type</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              id
+                              <em>(Primary)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(28,0)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              name
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              char(255)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              tumbnail
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              longblob
+            </td>
+            <td>Yes</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+              </table>
+
+      <h3>Indexes</h3><div class='no_indexes_defined hide'><div class="notice"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_notice"> No index defined!</div></div><div class="responsivetable jsresponsive"><table id="table_index"><thead><tr><th>Keyname</th><th>Type</th><th>Unique</th><th>Packed</th><th>Column</th><th>Cardinality</th><th>Collation</th><th>Null</th><th>Comment</th></tr></thead><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >PRIMARY</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >Yes</td><td  rowspan="1" >No</td><td>id</td><td>0</td><td>A</td><td>No</td><td  rowspan="1" ></td></tr></tbody></table></div>
+    </div>
+      <div>
+      <h2>opening_hours</h2>
+      
+      <table class="print">
+        <tr>
+          <th>Column</th>
+          <th>Type</th>
+          <th>Null</th>
+          <th>Default</th>
+                      <th>Links to</th>
+                    <th>Comments</th>
+                      <th>Media (MIME) type</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              id
+                              <em>(Primary)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(28,0)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              name
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(255)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              mon
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(255)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              tue
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(255)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              wed
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(255)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              thu
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(255)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              fri
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(255)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              sat
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(255)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              sun
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(255)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+              </table>
+
+      <h3>Indexes</h3><div class='no_indexes_defined hide'><div class="notice"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_notice"> No index defined!</div></div><div class="responsivetable jsresponsive"><table id="table_index"><thead><tr><th>Keyname</th><th>Type</th><th>Unique</th><th>Packed</th><th>Column</th><th>Cardinality</th><th>Collation</th><th>Null</th><th>Comment</th></tr></thead><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >PRIMARY</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >Yes</td><td  rowspan="1" >No</td><td>id</td><td>0</td><td>A</td><td>No</td><td  rowspan="1" ></td></tr></tbody></table></div>
+    </div>
+      <div>
+      <h2>pros_and_cons_data</h2>
+      
+      <table class="print">
+        <tr>
+          <th>Column</th>
+          <th>Type</th>
+          <th>Null</th>
+          <th>Default</th>
+                      <th>Links to</th>
+                    <th>Comments</th>
+                      <th>Media (MIME) type</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              id
+                              <em>(Primary)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(28,0)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              pro
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(255)
+            </td>
+            <td>Yes</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              con
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(255)
+            </td>
+            <td>Yes</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              SportDevice_id
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(28,0)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+              </table>
+
+      <h3>Indexes</h3><div class='no_indexes_defined hide'><div class="notice"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_notice"> No index defined!</div></div><div class="responsivetable jsresponsive"><table id="table_index"><thead><tr><th>Keyname</th><th>Type</th><th>Unique</th><th>Packed</th><th>Column</th><th>Cardinality</th><th>Collation</th><th>Null</th><th>Comment</th></tr></thead><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >PRIMARY</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >Yes</td><td  rowspan="1" >No</td><td>id</td><td>0</td><td>A</td><td>No</td><td  rowspan="1" ></td></tr></tbody><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >Pros_and_cons__IDX</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >Yes</td><td  rowspan="1" >No</td><td>SportDevice_id</td><td>0</td><td>A</td><td>No</td><td  rowspan="1" ></td></tr></tbody></table></div>
+    </div>
+      <div>
+      <h2>pros_and_cons_device</h2>
+      
+      <table class="print">
+        <tr>
+          <th>Column</th>
+          <th>Type</th>
+          <th>Null</th>
+          <th>Default</th>
+                      <th>Links to</th>
+                    <th>Comments</th>
+                      <th>Media (MIME) type</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              id
+                              <em>(Primary)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(28,0)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Pros_and_cons_data_id
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(28,0)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td>pros_and_cons_data -&gt; id</td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              SportDevice_id
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(28,0)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td>sportdevice -&gt; id</td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+              </table>
+
+      <h3>Indexes</h3><div class='no_indexes_defined hide'><div class="notice"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_notice"> No index defined!</div></div><div class="responsivetable jsresponsive"><table id="table_index"><thead><tr><th>Keyname</th><th>Type</th><th>Unique</th><th>Packed</th><th>Column</th><th>Cardinality</th><th>Collation</th><th>Null</th><th>Comment</th></tr></thead><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >PRIMARY</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >Yes</td><td  rowspan="1" >No</td><td>id</td><td>0</td><td>A</td><td>No</td><td  rowspan="1" ></td></tr></tbody><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >Pros_and_cons_device_Pros_and_cons_data_FK</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >No</td><td  rowspan="1" >No</td><td>Pros_and_cons_data_id</td><td>0</td><td>A</td><td>No</td><td  rowspan="1" ></td></tr></tbody><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >Pros_and_cons_device_SportDevice_FK</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >No</td><td  rowspan="1" >No</td><td>SportDevice_id</td><td>0</td><td>A</td><td>No</td><td  rowspan="1" ></td></tr></tbody></table></div>
+    </div>
+      <div>
+      <h2>pros_and_cons_review</h2>
+      
+      <table class="print">
+        <tr>
+          <th>Column</th>
+          <th>Type</th>
+          <th>Null</th>
+          <th>Default</th>
+                      <th>Links to</th>
+                    <th>Comments</th>
+                      <th>Media (MIME) type</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              id
+                              <em>(Primary)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(28,0)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Reviews_id
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(28,0)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td>reviews -&gt; id</td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Pros_and_cons_data_id
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(28,0)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td>pros_and_cons_data -&gt; id</td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+              </table>
+
+      <h3>Indexes</h3><div class='no_indexes_defined hide'><div class="notice"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_notice"> No index defined!</div></div><div class="responsivetable jsresponsive"><table id="table_index"><thead><tr><th>Keyname</th><th>Type</th><th>Unique</th><th>Packed</th><th>Column</th><th>Cardinality</th><th>Collation</th><th>Null</th><th>Comment</th></tr></thead><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >PRIMARY</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >Yes</td><td  rowspan="1" >No</td><td>id</td><td>0</td><td>A</td><td>No</td><td  rowspan="1" ></td></tr></tbody><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >Pros_and_cons_review_Pros_and_cons_data_FK</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >No</td><td  rowspan="1" >No</td><td>Pros_and_cons_data_id</td><td>0</td><td>A</td><td>No</td><td  rowspan="1" ></td></tr></tbody><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >Pros_and_cons_review_Reviews_FK</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >No</td><td  rowspan="1" >No</td><td>Reviews_id</td><td>0</td><td>A</td><td>No</td><td  rowspan="1" ></td></tr></tbody></table></div>
+    </div>
+      <div>
+      <h2>reviews</h2>
+      
+      <table class="print">
+        <tr>
+          <th>Column</th>
+          <th>Type</th>
+          <th>Null</th>
+          <th>Default</th>
+                      <th>Links to</th>
+                    <th>Comments</th>
+                      <th>Media (MIME) type</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              id
+                              <em>(Primary)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(28,0)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              comment
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              longtext
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              rating
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(2,0)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              SportDevice_id
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(28,0)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td>sportdevice -&gt; id</td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              users_id
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(28,0)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td>users -&gt; id</td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Pros_and_cons_id
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(28,0)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td>pros_and_cons_data -&gt; id</td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+              </table>
+
+      <h3>Indexes</h3><div class='no_indexes_defined hide'><div class="notice"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_notice"> No index defined!</div></div><div class="responsivetable jsresponsive"><table id="table_index"><thead><tr><th>Keyname</th><th>Type</th><th>Unique</th><th>Packed</th><th>Column</th><th>Cardinality</th><th>Collation</th><th>Null</th><th>Comment</th></tr></thead><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >PRIMARY</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >Yes</td><td  rowspan="1" >No</td><td>id</td><td>0</td><td>A</td><td>No</td><td  rowspan="1" ></td></tr></tbody><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >Reviews__IDX</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >Yes</td><td  rowspan="1" >No</td><td>Pros_and_cons_id</td><td>0</td><td>A</td><td>No</td><td  rowspan="1" ></td></tr></tbody><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >Reviews_SportDevice_FK</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >No</td><td  rowspan="1" >No</td><td>SportDevice_id</td><td>0</td><td>A</td><td>No</td><td  rowspan="1" ></td></tr></tbody><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >Reviews_users_FK</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >No</td><td  rowspan="1" >No</td><td>users_id</td><td>0</td><td>A</td><td>No</td><td  rowspan="1" ></td></tr></tbody></table></div>
+    </div>
+      <div>
+      <h2>specifications</h2>
+      
+      <table class="print">
+        <tr>
+          <th>Column</th>
+          <th>Type</th>
+          <th>Null</th>
+          <th>Default</th>
+                      <th>Links to</th>
+                    <th>Comments</th>
+                      <th>Media (MIME) type</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              id
+                              <em>(Primary)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(28,0)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              afmetingen
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              char(255)
+            </td>
+            <td>Yes</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              gewicht
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              char(255)
+            </td>
+            <td>Yes</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              gewicht_vliegwiel
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              char(255)
+            </td>
+            <td>Yes</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              display
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              char(255)
+            </td>
+            <td>Yes</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              garantie_frame
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              char(255)
+            </td>
+            <td>Yes</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              weerstandsysteem
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              char(255)
+            </td>
+            <td>Yes</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              SportDevice_id
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(28,0)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td>sportdevice -&gt; id</td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+              </table>
+
+      <h3>Indexes</h3><div class='no_indexes_defined hide'><div class="notice"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_notice"> No index defined!</div></div><div class="responsivetable jsresponsive"><table id="table_index"><thead><tr><th>Keyname</th><th>Type</th><th>Unique</th><th>Packed</th><th>Column</th><th>Cardinality</th><th>Collation</th><th>Null</th><th>Comment</th></tr></thead><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >PRIMARY</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >Yes</td><td  rowspan="1" >No</td><td>id</td><td>0</td><td>A</td><td>No</td><td  rowspan="1" ></td></tr></tbody><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >specifications_SportDevice_FK</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >No</td><td  rowspan="1" >No</td><td>SportDevice_id</td><td>0</td><td>A</td><td>No</td><td  rowspan="1" ></td></tr></tbody></table></div>
+    </div>
+      <div>
+      <h2>sportdevice</h2>
+      
+      <table class="print">
+        <tr>
+          <th>Column</th>
+          <th>Type</th>
+          <th>Null</th>
+          <th>Default</th>
+                      <th>Links to</th>
+                    <th>Comments</th>
+                      <th>Media (MIME) type</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              id
+                              <em>(Primary)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(28,0)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              name
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              char(255)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              description_1
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              longtext
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              description_2
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              longtext
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              description_3
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              longtext
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              tumbnail
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              longblob
+            </td>
+            <td>Yes</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              total_rating
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(10,0)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              categories_id
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(28,0)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td>categories -&gt; id</td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Pros_and_cons_id
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(28,0)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+              </table>
+
+      <h3>Indexes</h3><div class='no_indexes_defined hide'><div class="notice"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_notice"> No index defined!</div></div><div class="responsivetable jsresponsive"><table id="table_index"><thead><tr><th>Keyname</th><th>Type</th><th>Unique</th><th>Packed</th><th>Column</th><th>Cardinality</th><th>Collation</th><th>Null</th><th>Comment</th></tr></thead><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >PRIMARY</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >Yes</td><td  rowspan="1" >No</td><td>id</td><td>0</td><td>A</td><td>No</td><td  rowspan="1" ></td></tr></tbody><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >SportDevice__IDX</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >Yes</td><td  rowspan="1" >No</td><td>Pros_and_cons_id</td><td>0</td><td>A</td><td>No</td><td  rowspan="1" ></td></tr></tbody><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >SportDevice_categories_FK</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >No</td><td  rowspan="1" >No</td><td>categories_id</td><td>0</td><td>A</td><td>No</td><td  rowspan="1" ></td></tr></tbody></table></div>
+    </div>
+      <div>
+      <h2>subscriptions</h2>
+      
+      <table class="print">
+        <tr>
+          <th>Column</th>
+          <th>Type</th>
+          <th>Null</th>
+          <th>Default</th>
+                      <th>Links to</th>
+                    <th>Comments</th>
+                      <th>Media (MIME) type</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              id
+                              <em>(Primary)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(28,0)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              start_date
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              date
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              end_date
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              date
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              users_id
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(28,0)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td>users -&gt; id</td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Subscription_type_id
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(28,0)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td>subscription_type -&gt; id</td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+              </table>
+
+      <h3>Indexes</h3><div class='no_indexes_defined hide'><div class="notice"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_notice"> No index defined!</div></div><div class="responsivetable jsresponsive"><table id="table_index"><thead><tr><th>Keyname</th><th>Type</th><th>Unique</th><th>Packed</th><th>Column</th><th>Cardinality</th><th>Collation</th><th>Null</th><th>Comment</th></tr></thead><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >PRIMARY</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >Yes</td><td  rowspan="1" >No</td><td>id</td><td>0</td><td>A</td><td>No</td><td  rowspan="1" ></td></tr></tbody><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >Subscriptions_Subscription_type_FK</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >No</td><td  rowspan="1" >No</td><td>Subscription_type_id</td><td>0</td><td>A</td><td>No</td><td  rowspan="1" ></td></tr></tbody><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >Subscriptions_users_FK</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >No</td><td  rowspan="1" >No</td><td>users_id</td><td>0</td><td>A</td><td>No</td><td  rowspan="1" ></td></tr></tbody></table></div>
+    </div>
+      <div>
+      <h2>subscription_type</h2>
+      
+      <table class="print">
+        <tr>
+          <th>Column</th>
+          <th>Type</th>
+          <th>Null</th>
+          <th>Default</th>
+                      <th>Links to</th>
+                    <th>Comments</th>
+                      <th>Media (MIME) type</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              id
+                              <em>(Primary)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(28,0)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              kind
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(255)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+              </table>
+
+      <h3>Indexes</h3><div class='no_indexes_defined hide'><div class="notice"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_notice"> No index defined!</div></div><div class="responsivetable jsresponsive"><table id="table_index"><thead><tr><th>Keyname</th><th>Type</th><th>Unique</th><th>Packed</th><th>Column</th><th>Cardinality</th><th>Collation</th><th>Null</th><th>Comment</th></tr></thead><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >PRIMARY</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >Yes</td><td  rowspan="1" >No</td><td>id</td><td>0</td><td>A</td><td>No</td><td  rowspan="1" ></td></tr></tbody></table></div>
+    </div>
+      <div>
+      <h2>users</h2>
+      
+      <table class="print">
+        <tr>
+          <th>Column</th>
+          <th>Type</th>
+          <th>Null</th>
+          <th>Default</th>
+                      <th>Links to</th>
+                    <th>Comments</th>
+                      <th>Media (MIME) type</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              id
+                              <em>(Primary)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(28,0)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              first_name
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              char(255)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              last_name
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              char(255)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              mail
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              char(255)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              tel_number
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              char(20)
+            </td>
+            <td>Yes</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              password
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              char(255)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              role
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              tinyint(4)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+              </table>
+
+      <h3>Indexes</h3><div class='no_indexes_defined hide'><div class="notice"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_notice"> No index defined!</div></div><div class="responsivetable jsresponsive"><table id="table_index"><thead><tr><th>Keyname</th><th>Type</th><th>Unique</th><th>Packed</th><th>Column</th><th>Cardinality</th><th>Collation</th><th>Null</th><th>Comment</th></tr></thead><tbody class="row_span"><tr class="noclick" ><td  rowspan="1" >PRIMARY</td><td  rowspan="1" >BTREE</td><td  rowspan="1" >Yes</td><td  rowspan="1" >No</td><td>id</td><td>0</td><td>A</td><td>No</td><td  rowspan="1" ></td></tr></tbody></table></div>
+    </div>
+  </div>
+
+<p class="print_ignore">
+  <input type="button" class="btn btn-secondary button" id="print" value="Print">
+</p>
+  </div>
+  <div id="selflink" class="print_ignore"><a href="db_datadict.php?db=anytimefitness&amp;table=&amp;server=1&amp;target=" title="Open new phpMyAdmin window" target="_blank" rel="noopener noreferrer"><img src="themes/dot.gif" title="Open new phpMyAdmin window" alt="Open new phpMyAdmin window" class="icon ic_window-new"></a></div>
+
+  <div class="clearfloat" id="pma_errors">
+    
+  </div>
+
+  
+<script data-cfasync="false" type="text/javascript">
+// <![CDATA[
+var debugSQLInfo = 'null';
+
+// ]]>
+</script>
+
+
+  
+  
+  </body>
+</html>
